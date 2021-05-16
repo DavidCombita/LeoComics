@@ -1,1 +1,53 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar navbar-aling-center">
+        <div>
+            <a href="#">
+                <img src="../../../assets/img/LogoLeocomics - copia.jpeg" class="img-logo">
+            </a>
+        </div> 
+        <div class="collapse navbar-collapse navbar" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link paddingText" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button mat-button [matMenuTriggerFor]="menu" class="nav-link dropdown-toggle styleDrop">Categorias</button>
+                    <mat-menu #menu="matMenu"  class="styleDropcolor">
+                        <button mat-menu-item>Marvel</button>
+                        <button mat-menu-item>DC Comics</button>
+                        <button mat-menu-item>Manga</button>
+                    </mat-menu>
+                </li>
+                <li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 styleInput nav-link" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+                <li>
+                    <div class="nav-item styleLinkPadd">
+                        <a class="nav-link" href="#">Iniciar Sesión</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item styleLinkPadd">
+                        <a class="nav-link" href="#">Registrarte</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item styleLinkPadd">
+                        <a href="#">
+                            <img class="style-icon-img" src="../../../assets/img/heart.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item styleLinkPadd">
+                        <a href="#">
+                            <img class="style-icon-img" src="../../../assets/img/shopping-cart.png" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
